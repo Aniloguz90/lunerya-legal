@@ -1,0 +1,129 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lunerya Privacy Policy</title><style>:root{color-scheme:light dark;--bg:#fbfaf7;--fg:#1d1b2e;--muted:#5d5873;--line:#e4e0ee;--link:#5b3fc4}
+@media (prefers-color-scheme:dark){:root{--bg:#0b0f24;--fg:#ece8f6;--muted:#b3acc8;--line:#262b52;--link:#c9bbff}}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:32px 16px 64px}a{color:var(--link)}h1{font-size:1.8rem;line-height:1.25}
+h2{margin-top:2rem;padding-top:1rem;border-top:1px solid var(--line)}h3{margin-top:1.4rem}
+table{border-collapse:collapse;width:100%;display:block;overflow-x:auto}td,th{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}
+nav,footer{font-size:.9rem;color:var(--muted)}nav a,footer a{margin-right:12px}code{font-size:.9em}</style></head><body><main>
+<nav><a href="/privacy/">Privacy Policy</a><a href="/support/">Support</a><a href="/tr/gizlilik/">Türkçe</a></nav>
+<h1>Lunerya Privacy Policy</h1>
+<p><strong>Effective date:</strong> 15 November 2026 <strong>Controller:</strong> Mehmet Anil Oguz, the developer of Lunerya ("we", "us") <strong>Contact:</strong> <a href="mailto:support@lingoshop.app">support@lingoshop.app</a></p>
+<p>Lunerya is a dream journal with optional AI dream readings. This policy explains what data the app and our server process, why, for how long, and your rights.</p>
+<h2>1. Summary</h2>
+<ul><li>Your <strong>dream journal stays on your device.</strong> We don't sync it or back it up. Only what you send for a reading reaches our server (§2.1), and our server doesn't store your dream text.
+</li><li><strong>AI readings are optional.</strong> Only when you ask for one, and only after you give permission, the dream text and the mood you chose are sent through our server to our AI provider (OpenAI) to create the reading.
+</li><li>We <strong>don't ask for your name, email address or phone number</strong>, and you don't need an account.
+</li><li>There are <strong>no ads, no tracking and no analytics</strong>.
+</li><li>Purchases are handled by <strong>Apple</strong>. We receive Apple-signed purchase records, never your payment details.
+</li></ul>
+<h2>2. What we process and why</h2>
+<h3>2.1 Dream text and mood (only when you request an AI reading)</h3>
+<ul><li><strong>What:</strong>
+<ul><li>the text of the dream you submit for a reading, the mood you selected, and the reading language;
+</li><li>the catalogue names of symbols that recur in your journal (for example "water" or "house"). Our server passes on to OpenAI only those that also appear in this dream, as a note that they recur.
+</li><li>With each request our server also receives technical data it needs to run the service. That's a random request identifier and time, the version of the permission you gave, an App Attest check (§2.2), and Apple-signed purchase records if you bought something (§2.3). None of this is sent to OpenAI.
+</li></ul>
+</li><li><strong>Why:</strong> to screen the text for safety and to create your reading.
+</li><li><strong>How:</strong>
+<ul><li>The data goes to our server (Amazon Web Services, Stockholm, Sweden), then to OpenAI. OpenAI processes it to run an automated safety check and to write the reading.
+</li><li>We don't forward your name, email address, device identifiers, account identifiers or purchase data to OpenAI. OpenAI receives only what's needed to write the reading. Your dream text is sent as you wrote it, so any names or other personal details you include in it are sent too.
+</li><li>Our server <strong>does not store your dream text.</strong> It keeps only a one-way fingerprint of the request, plus the generated reading for <strong>up to 10 minutes</strong>, so that a request interrupted by a bad connection isn't charged twice. That temporary record is tagged with the pseudonymous identifier of your app installation, or of your subscription.
+</li></ul>
+</li><li><strong>Legal basis:</strong> your <strong>explicit consent</strong>, given in the app before your first reading. Dreams can reveal sensitive information, such as health. You can withdraw consent at any time in Settings → Allow AI readings. The journal keeps working without it.
+</li></ul>
+<h3>2.2 Device identifier for security (App Attest)</h3>
+<ul><li><strong>What:</strong> when the app first contacts our server, your device creates a key pair for this app installation using Apple's App Attest service. We store the <strong>public key and its key identifier</strong>, a usage counter, and the date of registration.
+</li><li><strong>Why:</strong> to confirm that requests come from the genuine Lunerya app on a real device. We use the pseudonymous installation identifier to apply limits: daily request limits, and the 5 free readings per installation.
+</li><li><strong>Legal basis:</strong> our legitimate interest in preventing fraud and abuse, and providing the service you request.
+</li></ul>
+<h3>2.3 Purchase history</h3>
+<ul><li><strong>What:</strong> Apple-signed records of your purchases in Lunerya: the Basic subscription and "5 More Readings". This includes product, transaction identifiers, dates, renewal and refund status, and Apple's identifier of your App Store account's download of the app (used to restore purchased readings without an account).
+</li><li><strong>Why:</strong>
+<ul><li>to verify purchases with Apple;
+</li><li>to give you your Basic readings (30 per billing period) and purchased readings;
+</li><li>to restore them on reinstall or on a new device;
+</li><li>to process refunds.
+</li></ul>
+</li><li><strong>How:</strong>
+<ul><li>We check each record with Apple's App Store Server API.
+</li><li>We store purchase and credit records under <strong>pseudonyms</strong> (one-way keyed hashes of Apple's identifiers), plus counts of readings used.
+</li><li>We never receive your Apple ID, name, email or payment details.
+</li></ul>
+</li><li><strong>Notifications from Apple:</strong> Apple's App Store Server Notifications tell our server about renewals, expirations and refunds of these purchases. We keep each notification's identifier for 30 days so that it is applied only once.
+</li><li><strong>Legal basis:</strong> performance of the contract with you (providing what you bought).
+</li></ul>
+<h3>2.4 Server logs</h3>
+<p>Technical logs contain no dream text, readings or names. They hold only event names, status codes, timings, token counts, costs and pseudonymous identifiers. They are kept <strong>14 days</strong>.</p>
+<h3>2.5 Photos</h3>
+<p>If you tap "Save to Photos", the app adds the share card you created to your photo library. It never reads your photos.</p>
+<h3>2.6 Support email</h3>
+<p>If you write to us, we receive what you send from your own email app (your address and message). We use it only to answer you, and delete it once your request is resolved, unless the law requires us to keep it longer.</p>
+<h3>2.7 Service availability (country lookup)</h3>
+<ul><li><strong>Why:</strong> our AI provider may only be used in certain countries and territories. So before a reading is created, our server checks the country of the connection's IP address, and the App Store region your app reports.
+</li><li><strong>How:</strong>
+<ul><li>The IP address is used only in memory, during that request, to look up a country in a database bundled with our server (<strong>IP Geolocation by DB-IP</strong>, <a href="https://db-ip.com">https://db-ip.com</a>, CC BY 4.0). Nothing is sent to another service.
+</li><li>We don't store or log the IP address or the country, and we build no location history.
+</li><li>Where readings aren't available, nothing is counted or charged, your journal keeps working, and your subscription and purchased readings stay recorded.
+</li></ul>
+</li><li><strong>Limits:</strong> IP-based location is approximate and can't detect VPNs or proxies.
+</li><li><strong>Legal basis:</strong> our legitimate interest, and our contractual obligation to our AI provider, in offering readings only where they may lawfully be provided.
+</li></ul>
+<h2>3. Who receives data</h2>
+<ul><li><strong>OpenAI</strong> (OpenAI, L.L.C., USA) processes the dream text and mood as our AI service provider.
+<ul><li>It receives them through its API with storage turned off, and doesn't use API data to train its models.
+</li><li>Under its own policy, OpenAI keeps abuse-monitoring logs for up to 30 days, unless the law requires longer.
+</li><li>The data is processed in the United States.
+</li><li>OpenAI processes this data for us under its Services Agreement for API customers, which incorporates OpenAI's Data Processing Addendum (<a href="https://openai.com/policies/data-processing-addendum/">https://openai.com/policies/data-processing-addendum/</a>). Transfers to the United States rely on the transfer safeguards set out in that addendum. You can ask us for details.
+</li></ul>
+</li><li><strong>Amazon Web Services</strong> (EU region Stockholm, Sweden) hosts our server and database under the AWS Data Processing Addendum. Your data stays in that region.
+</li><li><strong>Apple</strong> processes purchases and provides App Attest and purchase verification, under Apple's privacy policy.
+</li></ul>
+<p>We don't sell or rent personal data, and we don't share it for advertising.</p>
+<h2>4. How long we keep data</h2>
+<table><thead><tr><th>Data</th><th>Retention</th></tr></thead><tbody>
+<tr><td>Dream journal</td><td>On your device until you delete it (Settings → Delete All My Dreams, or delete the app)</td></tr>
+<tr><td>Dream text sent for a reading</td><td>Not stored by our server. OpenAI: see §3</td></tr>
+<tr><td>Generated reading on our server</td><td>Up to 10 minutes (retry protection)</td></tr>
+<tr><td>Daily request and purchase-check counters</td><td>2 days</td></tr>
+<tr><td>Subscription status received from Apple</td><td>Up to 10 minutes (cached)</td></tr>
+<tr><td>Identifier of a purchase notification from Apple</td><td>30 days</td></tr>
+<tr><td>Basic allowance per billing period</td><td>70 days after the period</td></tr>
+<tr><td>Link between a subscription or purchase identity and an installation</td><td>30 days after last use</td></tr>
+<tr><td>Installation key and the lifetime free-reading counter</td><td>No automatic expiry: needed so the 5 free readings stay limited per installation</td></tr>
+<tr><td>Purchased-credit and purchase records</td><td>No automatic expiry: purchased readings never expire, and records are needed for restores and refunds</td></tr>
+<tr><td>IP address used for the country lookup</td><td>Not stored (in memory during the request only)</td></tr>
+<tr><td>Server logs</td><td>14 days</td></tr>
+<tr><td>Database backups</td><td>Up to 35 days (point-in-time recovery)</td></tr>
+</tbody></table>
+<p>Expired records are deleted automatically by our database, normally within a few days of their expiry time.</p>
+<h2>5. Your rights</h2>
+<p>Depending on where you live (for example the EU/EEA under the GDPR, or Türkiye under KVKK), you can:</p>
+<ul><li>ask for access to, correction or deletion of your data;
+</li><li>restrict or object to processing;
+</li><li>ask for data portability;
+</li><li>withdraw consent at any time, without affecting earlier processing;
+</li><li>complain to your data protection authority (in Türkiye: the Personal Data Protection Authority, KVKK).
+</li></ul>
+<p>Write to <a href="mailto:support@lingoshop.app">support@lingoshop.app</a>. Because Lunerya has no accounts and our records are pseudonymous, we can't find your data from your name or email. To act on a request we may ask for information only your device can provide. If we can't identify your data, we'll tell you (GDPR Art. 11).</p>
+<p>You can always:</p>
+<ul><li>delete your journal in the app;
+</li><li>withdraw AI consent in Settings;
+</li><li>manage or cancel your subscription in your Apple account settings;
+</li><li>ask Apple for a refund at reportaproblem.apple.com.
+</li></ul>
+<h2>6. Safety</h2>
+<p>Every dream sent for a reading is screened automatically for signs of crisis, and in that case the app shows support information instead of a reading. No person reads your dreams. Lunerya is not a medical, psychological or emergency service.</p>
+<h2>7. Children</h2>
+<p>Lunerya is meant for people aged 16 and over, and isn't directed to children. We don't knowingly process children's data. If you think a child has sent us data, contact us and we'll delete what we can identify.</p>
+<h2>8. Security</h2>
+<ul><li><strong>In transit:</strong> all traffic is encrypted (HTTPS/TLS).
+</li><li><strong>At rest:</strong> our database is encrypted, and secrets are kept in encrypted storage.
+</li><li><strong>Access:</strong> requests must come from the genuine app (App Attest), and access to our systems is restricted.
+</li></ul>
+<h2>9. Changes</h2>
+<p>We'll update this policy when our processing changes, and show the new effective date. Significant changes will be announced in the app.</p>
+<h2>10. Contact</h2>
+<p>Mehmet Anil Oguz — <a href="mailto:support@lingoshop.app">support@lingoshop.app</a></p>
+<footer><hr><p>Lunerya · <a href="mailto:support@lingoshop.app">support@lingoshop.app</a> · <a href="https://db-ip.com">IP Geolocation by DB-IP</a></p></footer>
+</main></body></html>
